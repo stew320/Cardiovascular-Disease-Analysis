@@ -106,3 +106,43 @@ Both BMI and cholesterol were associated with cardiovascular disease after adjus
 Removing cholesterol caused a greater deterioration in model fit than removing BMI, suggesting that cholesterol contributed more incremental explanatory information within this model specification.
 
 These results do not establish that cholesterol is universally a stronger predictor than BMI.
+
+## Statistical Modeling
+
+A logistic regression model was developed using Statsmodels to examine the relationship between age, BMI category, cholesterol level, and cardiovascular disease status.
+
+### Model Results
+
+- **Observations:** 68,576
+- **Dependent Variable:** Cardiovascular disease status (0 = No disease, 1 = Disease)
+- **Independent Variables:** Age, BMI category, cholesterol level
+- **McFadden Pseudo R-squared:** 0.0835
+- **Statistical Significance:** All included predictor coefficients were statistically significant (p < 0.001).
+
+### Adjusted Odds Ratios
+
+The logistic regression produced the following results:
+
+- **Age:** Each additional year was associated with approximately 6.7% higher odds of cardiovascular disease.
+- **Obese:** Patients classified as Obese had approximately 3.42 times the odds of cardiovascular disease compared with Underweight patients.
+- **Well Above Normal Cholesterol:** Patients with Level 3 cholesterol had approximately 3.16 times the odds of cardiovascular disease compared with patients with Normal cholesterol.
+
+These comparisons account for the other predictors included in the model. Odds ratios describe differences in odds, not direct changes in probability.
+
+## Project Limitations
+
+Several limitations should be considered when interpreting the findings:
+
+1. **Observational Data:** The analysis identifies statistical associations but cannot establish causation.
+2. **Uneven Sample Sizes:** Some patient groups contained substantially fewer observations, including the Underweight BMI category and the youngest age group.
+3. **Data Cleaning:** Removing implausible measurements may have introduced selection bias or affected the distribution of the analyzed population.
+4. **Limited Predictors:** The logistic regression included age, BMI, cholesterol but excluded other potentially relevant factors such as smoking, physical activity, and blood pressure.
+5. **Model Validation:** The logistic regression was not evaluated using a separate test dataset, so its performance on unseen observations has not been established.
+
+### Future Improvements
+
+Future analysis could include:
+
+- Expanding the regression model to incorporate additional patient characteristics.
+- Evaluating predictive performance using a train/test split and metrics such as precision, recall, and ROC-AUC.
+- Investigating interactions between variables to determine whether associations differ across patient groups.
