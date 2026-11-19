@@ -101,4 +101,8 @@ These findings indicate a strong association between elevated blood pressure and
 
 **Interpretation**
 
+Both BMI and cholesterol were associated with cardiovascular disease after adjusting for age and the other included predictor.
 
+Removing cholesterol caused a greater deterioration in model fit than removing BMI, suggesting that cholesterol contributed more incremental explanatory information within this model specification.
+
+These results do not establish that cholesterol is universally a stronger predictor than BMI.
