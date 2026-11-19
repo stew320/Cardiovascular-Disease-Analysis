@@ -52,3 +52,53 @@ The dataset underwent several cleaning and transformation steps before analysis:
 7. **Blood Pressure Categories:** Classified patients into blood pressure groups for prevalence comparisons.
 
 These steps produced a cleaned dataset suitable for exploratory analysis, visualization, and logistic regression.
+
+## Analysis and Key Findings
+
+### Question 1: Age and Physical Activity
+
+**Research Question:** How does cardiovascular disease prevalence vary across age groups, and how does physical activity relate to that prevalence?
+
+**Key Findings:**
+
+- Cardiovascular disease prevalence generally increased across older age groups.
+- Within each age group analyzed, physically active patients demonstrated lower cardiovascular disease prevalence than inactive patients.
+- Among patients aged 55-59, prevalence was 60.1% for inactive patients compared with 55.1% for active patients, a difference of 5 percentage points.
+- The 25-34 age group contained only four observations and was excluded from the age/activity visualization due to its extremely small sample size.
+
+**Interpretation**
+
+The findings suggest that age is positively associated with cardiovascular disease prevalence, while physical activity is associated with lower prevalence within the age group examined. These relationships are observational and do not establish causation.
+
+### Question 2: Blood Pressure
+
+**Research Question:** Does elevated blood pressure correspond to higher cardiovascular disease prevalence, and does that relationship differ by age?
+
+**Key Findings:**
+
+- Normal blood pressure: 22.1% cardiovascular disease prevalence.
+- Elevated blood pressure: 32.3% prevalence.
+- Stage 1 hypertension: 38.5% prevalence.
+- Stage 2 hypertension: 78.0% prevalence.
+
+**Interpreation**
+
+Cardiovascular disease prevalence increased across higher blood pressure categories. Patients classified as Stage 2 hypertension demonstrated substantially higher prevalence than patients with Normal blood pressure.
+
+These findings indicate a strong association between elevated blood pressure and cardiovascular disease status within the dataset.
+
+### Question 3: BMI and Cholesterol
+
+**Research Question:** Is BMI or cholesterol more strongly associated with cardiovascular disease after accounting for age?
+
+**Key Findings:**
+
+- Cardiovascular disease prevalence increased from 27.5% among Underweight patients to 62.4% among Obese patients.
+- Prevalence increased from 43.5% among patients with Normal cholesterol to 76.2% among patients with Well Above Normal cholesterol.
+- Logistic regression showed that both BMI category and cholesterol level were statistically significant predictors after accounting for age and the other included variable (p < 0.001).
+- Removing BMI from the full model produced a likelihood ratio statistic of approximately 1,323.37.
+- Removing cholesterol produced a larger likelihood ratio statistic of approximately 2,060.64.
+
+**Interpretation**
+
+
