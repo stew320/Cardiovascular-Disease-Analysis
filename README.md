@@ -146,3 +146,11 @@ Future analysis could include:
 - Expanding the regression model to incorporate additional patient characteristics.
 - Evaluating predictive performance using a train/test split and metrics such as precision, recall, and ROC-AUC.
 - Investigating interactions between variables to determine whether associations differ across patient groups.
+
+## Full Python Analysis
+
+The complete analysis, including data cleaning, exploratory data analysis, visualizations, logistic regression, and statistical interpretations, is available in the Jupyter notebook.
+
+**View the complete project:**
+
+[Cardiovascular Disease Analysis - Jupyter Notebook](cardio_vasc.ipynb)
