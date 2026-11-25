@@ -28,6 +28,7 @@ This analysis focused on three research questions:
 ## Dataset Overview
 
 The analysis uses the Cardiovascular Disease Dataset from Kaggle, containing 70,000 patient records and variables related to cardiovascular health.
+**Data Source:** [Cardiovascular Disease Dataset (Kaggle)](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
 
 The dataset includes:
 
