@@ -47,7 +47,7 @@ The dataset underwent several cleaning and transformation steps before analysis:
 2. **Blood Pressure:** Identified and removed unrealistic systolic and diastolic blood pressure measurements.
 3. **Height and Weight:** Investigated extreme measurements and removed observations considered implausible.
 4. **Age Conversion:** Converted patient age from days into years to improve interpretability.
-5. **BMI Calculations:** Calculated Boston Mass Index (BMI) using height and weight, then categorized patients into BMI groups.
+5. **BMI Calculations:** Calculated Body Mass Index (BMI) using height and weight, then categorized patients into BMI groups.
 6. **Age Groups:** Created age categories to compare cardiovascular disease prevalence across different age ranges.
 7. **Blood Pressure Categories:** Classified patients into blood pressure groups for prevalence comparisons.
 
